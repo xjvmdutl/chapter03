@@ -14,7 +14,7 @@ public class VIPCustomer extends Customer {//기존 기능 확장할 것이 많이 떄문에 �
 	public VIPCustomer() {
 		bonusRatio = 0.05;
 		salesRatio = 0.1;
-		customeGrade = "VIP";//private 속성이기때문에 에러가 난다(
+		customerGrade = "VIP";//private 속성이기때문에 에러가 난다(
 	}
 	public String getAgentID() {
 		return agentID;

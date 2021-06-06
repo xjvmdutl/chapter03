@@ -3,8 +3,8 @@ package ch04;
 public class Customer {
 
 	protected int customerID;
-	protected String customeName; 
-	protected String customeGrade;
+	protected String customerName; 
+	protected String customerGrade;
 	int bonusPoint;
 	double bonusRatio;
 	/*
@@ -14,7 +14,10 @@ public class Customer {
 	}*/
 	public Customer(int customerID,String customeName) {
 		this.customerID = customerID;
-		this.customeName = customeName;
+		this.customerName = customeName;
+		
+		customerGrade = "SILVER";
+		bonusRatio = 0.01;
 	}
 	//고객이 반환하는 값을 재정의 해야한다.
 	public int calcPrice(int price) {
@@ -22,7 +25,7 @@ public class Customer {
 		return price;
 	}
 	public String showCustomerInfo() {
-		return customeName + "님의 등급은 " + customeGrade + "이며, 보너스 포인트는 " + bonusPoint + "입니다.";  
+		return customerName + "님의 등급은 " + customerGrade + "이며, 보너스 포인트는 " + bonusPoint + "입니다.";  
 	}
 	public int getCustomerID() {
 		return customerID;
@@ -30,17 +33,18 @@ public class Customer {
 	public void setCustomerID(int customerID) {
 		this.customerID = customerID;
 	}
-	public String getCustomeName() {
-		return customeName;
+	public String getCustomerName() {
+		return customerName;
 	}
-	public void setCustomeName(String customeName) {
-		this.customeName = customeName;
+	public void setCustomerName(String customerName) {
+		this.customerName = customerName;
 	}
-	public String getCustomeGrade() {
-		return customeGrade;
+	public String getCustomerGrade() {
+		return customerGrade;
 	}
-	public void setCustomeGrade(String customeGrade) {
-		this.customeGrade = customeGrade;
+	public void setCustomerGrade(String customerGrade) {
+		this.customerGrade = customerGrade;
 	}
+	
 	
 }

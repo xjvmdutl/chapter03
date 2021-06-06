@@ -27,7 +27,7 @@ public class VIPCustomer extends Customer {
 		super(customerID, customeName);
 		bonusRatio = 0.05;
 		salesRatio = 0.1;
-		customeGrade = "VIP";
+		customerGrade = "VIP";
 		System.out.println("VIP(int,String) call");
 	}
 	public String getAgentID() {

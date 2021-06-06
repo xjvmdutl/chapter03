@@ -1,4 +1,4 @@
-package ch03;
+package ch06;
 
 public class Customer {
 
@@ -7,17 +7,11 @@ public class Customer {
 	protected String customerGrade;
 	int bonusPoint;
 	double bonusRatio;
-	/*
-	public Customer() {
-		customeGrade = "SILVER";
-		bonusRatio = 0.01;
-		System.out.println("Customer() Call");//로그
-	}*/
-	//만약 기본 생성자가 아닐경우
 	public Customer(int customerID,String customeName) {
 		this.customerID = customerID;
 		this.customerName = customeName;
-		System.out.println("Customer(int,String) Call");//로그
+		customerGrade = "SILVER";
+		bonusRatio = 0.01;
 	}
 	public int calcPrice(int price) {
 		bonusPoint += price * bonusRatio;
